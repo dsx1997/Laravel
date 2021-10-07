@@ -1,0 +1,103 @@
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #171717; 
+  border-radius: 7px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c; 
+  border-radius: 5px;
+}
+.custom_btn {
+	background-color: blue;
+	color: white;
+	padding: 5px 20px;
+    border: 1px solid blue;
+    font-weight: bold;
+    font-family: initial;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    left: 16px;
+}
+.custom_btn:hover {
+	background-color: green;
+    color: red;
+}
+
+.custom_btn:active {
+	background-color: lightgreen;
+    color: white;
+}
+.my_modal {
+	position: fixed;
+	left: 30%;
+	display: none;
+	flex-direction: column;
+	width: 45%;
+	font-family: initial;
+	border: 1px solid grey;
+	border-radius: 5px;
+	z-index: 1;
+	transition: all 1.5s;
+	box-shadow: 2px 3px grey;
+}
+.my_modal_header {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px dotted grey;
+}
+
+.my_modal_body {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.delete_bid {
+	background-color: red;
+}
+.portlet-title>div {
+	width: 90%;
+}
+.portlet-title svg {	
+	 stroke:rgb(0,0,0);
+	 stroke-width:2;
+}
+
+.portlet-title svg:hover {
+	width: 18px;
+	height: 18px;
+	 stroke:rgb(255,0,0);
+	 stroke-width:3;
+	 cursor: pointer;
+}
+.portlet-title svg:action {
+	 stroke:rgb(255,255,0);
+	 stroke-width:2;
+}
+.portlet-title a {
+	float: right;
+}
+.project_name_div:hover input[type=text]{
+	display: block;
+} 
+.project_name_input {
+	width: 75%;
+	font-weight: bold;
+	color: blue;
+	border: none;
+}
+.save_button {
+	margin: 10px 0px;
+}

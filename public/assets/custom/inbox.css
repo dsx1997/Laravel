@@ -1,0 +1,51 @@
+
+	
+		.recent-message {
+			background-color: #FAFAFA;
+			height: 744px;
+		}
+		.input-circle {
+			margin-left: 10%;
+			width: 80%;
+		}
+		.select_receiver_btn {
+			padding: 5px 10px;
+			background-color: lightblue;
+			border-radius: 5px !important;
+		}
+
+		.select_receiver_btn:hover {
+			cursor: pointer;
+			background-color: skyblue;
+		}
+		.input-icon {
+			width: 80%;
+		}
+		.search_result {
+			margin:0 10%;
+			margin-top: 5px;
+			border-radius: 5px;
+			padding: 10px;
+			border: 1px dotted grey;
+		}
+		.active_receivers{
+			list-style-type: none;
+		}
+		.active_receivers li {
+			padding: 5px 20px;	
+			width: 50%;		
+		}
+		.active_receivers li:hover {
+			background-color: skyblue;
+			cursor: pointer;
+		}
+		.active_receivers li:active {
+			background-color: red;
+			color: white;
+			cursor: pointer;
+		}
+		.msg_content_style {
+			font-size: 18px;
+			color: black;
+		}
+	
