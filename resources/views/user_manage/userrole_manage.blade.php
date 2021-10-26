@@ -175,7 +175,6 @@
                         menu_name : menu_name,
                 },
                 success:function(data){ 
-                    console.log(data);
                     $("#add_parent_menu_modal").modal('hide');
                 }
             });
@@ -188,8 +187,6 @@
                     _token:'<?php echo csrf_token() ?>',
                 },
                 success:function(data){
-                    console.log('qwer');
-                    console.log(data);
                     for(var i = 0; i < data.length; i++){
                         $("#menu_row").append('<div style="margin-left: 80px;"><i class="icon-basket"></i><span class="title">'+ data[i] +' </span></div>');          
                     }
@@ -330,7 +327,6 @@
                         sort_display : sort_display,               
                     },
                     success:function(data){
-                        console.log(data);
 
                             toastr.options = {
                             closeButton: true, debug: true, positionClass: 'toast-top-right', onclick: null,
@@ -435,7 +431,6 @@
                     _token:'<?php echo csrf_token() ?>',
                 },
                 success:function(data){
-                    console.log(data);
                     createRow(oTable, nRow, data);
                 }
             });
@@ -469,7 +464,6 @@
                     sort_display : sort_display,        
                 },
                 success:function(data){
-                    console.log(data);
                     toastr.options = {
                         closeButton: true, debug: true, positionClass: 'toast-top-right', onclick: null,
                         showDuration : 500, hideDuration : 500, timeOut : 5000, extendedTimeOut : 1000,
@@ -513,7 +507,6 @@
                         _token:'<?php echo csrf_token() ?>',
                     },
                     success:function(data){
-                        console.log(data);
                         editRow(oTable, nRow, data);
                     }
                 });
@@ -535,7 +528,6 @@
                         _token:'<?php echo csrf_token() ?>',
                     },
                     success:function(data){
-                        console.log(data);
                         editRow(oTable, nRow, data);
                     }
                 });

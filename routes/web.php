@@ -65,6 +65,17 @@ Route::group(['namespace' => 'Profiles', 'prefix' => '/profiles', 'middleware' =
 
             Route::get('/session', 'SessionController@index');
             Route::post('/session_store', 'SessionController@session_store')->name('session_store');
+
+            Route::get('/my_profile', [
+                'middleware' => 'userauth:/profiles/my_profile',
+                'uses' => 'MyProfileController@my_profile',
+            ]);
+
+            Route::get('/stripe', [
+                'middleware' => 'userauth:/profiles/stripe',
+                'uses' => 'StripeController@stripe',
+            ]);
+            Route::post('/stripe', 'StripeController@stripePost')->name('profiles.stripe');
             
 });
 Route::group(['namespace' => 'System', 'prefix' => '/system', 'middleware' => ['auth']], function(){
@@ -139,8 +150,6 @@ Route::get('/image_upload_with_validation',['as'=>'getimage','uses'=>'ImageContr
 Route::post('image-upload-with-validation',['as'=>'postimage','uses'=>'ImageController@postImage']);
 
 Route::get('system/download', 'System\DownloadController@index')->name('download');
-
-
 
 
 
