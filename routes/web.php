@@ -75,8 +75,7 @@ Route::group(['namespace' => 'Profiles', 'prefix' => '/profiles', 'middleware' =
                 'middleware' => 'userauth:/profiles/stripe',
                 'uses' => 'StripeController@stripe',
             ]);
-            Route::post('/stripe', 'StripeController@stripePost')->name('profiles.stripe');
-            
+            Route::post('/stripe', 'StripeController@stripePost')->name('profiles.stripe');            
 });
 Route::group(['namespace' => 'System', 'prefix' => '/system', 'middleware' => ['auth']], function(){
             Route::get('/lock_screen', [

@@ -118,7 +118,7 @@
 									<li>
 										<a href="page_todo.html" target="_blank">
 										<i class="icon-check"></i>
-										Tasks </a>
+										{{$ip_address}}</a>
 									</li>
 									<li>
 										<a href="extra_profile_help.html">

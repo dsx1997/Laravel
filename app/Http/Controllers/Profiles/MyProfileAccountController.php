@@ -11,10 +11,11 @@ use App\User;
 class MyProfileAccountController extends Controller
 {
     
-    public function my_account()
+    public function my_account(Request $request)
     {        
-        $data = DB::table('users')->where('email',Auth::user()->email)->first();        
-        return view('profiles.my_account',compact('data'));
+        $data = DB::table('users')->where('email',Auth::user()->email)->first();    
+        $ip_address = $request->ip();
+        return view('profiles.my_account',compact('data', 'ip_address'));
     }
     public function update_personal_info(Request $requests)
     {
